@@ -4,6 +4,8 @@ import { useState } from "react";
 import { supabaseBrowser } from "@/lib/supabaseBrowser";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
 export default function SignupPage() {
   const supabase = supabaseBrowser();
